@@ -6,18 +6,31 @@
     <style>
       body { margin: 0; }
       #v3d-container { position: absolute; width: 100%; height: 100% }
+	  .hidden {
+  display: none;
+}
     </style>
   </head>
   <body>
     <div id="v3d-container"></div>
     <script src="v3d.js"></script>
+
     <script>
       const app = new v3d.App('v3d-container');
 
-      app.loadScene('cure.glb', () => {
+      app.loadScene('ering.glb', () => {
           app.enableControls();
           app.run();
       });
     </script>
+		<script>
+	var anchor = document.getElementById('app1'); // 或其他选择器
+ 
+// 获取动态属性
+var dynamicAttribute = anchor.text; // 假设你的动态属性名为data-dynamic
+
+
+	
+	</script>
   </body>
 </html>
